@@ -1,13 +1,13 @@
-package com.javamicroservice.demo;
+package com.szetapp.medical_clinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class MedicalClinicApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(MedicalClinicApplication.class, args);
 	}
 
 }

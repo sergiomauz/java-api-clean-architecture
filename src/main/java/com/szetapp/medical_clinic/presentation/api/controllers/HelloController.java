@@ -1,4 +1,4 @@
-package com.javamicroservice.demo.controllers;
+package com.szetapp.medical_clinic.presentation.api.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,3 +18,4 @@ public class HelloController {
         return json;
     }
 }
+

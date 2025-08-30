@@ -1,10 +1,10 @@
-package com.javamicroservice.demo;
+package com.szetapp.medical_clinic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class MedicalClinicApplicationTests {
 
 	@Test
 	void contextLoads() {

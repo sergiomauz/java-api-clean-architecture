@@ -1,0 +1,24 @@
+services:
+  java_spring_boot_pg:
+    image: postgres:15
+    container_name: java_spring_boot_pg
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=db_project
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=711703
+    volumes:
+      - ./postgresql:/var/lib/postgresql/data
+
+
+  java_spring_boot_api:
+    build: .
+    container_name: java_spring_boot_api
+    ports:
+      - "8080:8080"
+      - "5005:5005"
+    depends_on:
+      - java_spring_boot_pg
+    links:
+      - java_spring_boot_pg
