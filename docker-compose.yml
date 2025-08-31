@@ -1,3 +1,5 @@
+name: java_spring_boot
+
 services:
   java_spring_boot_pg:
     image: postgres:15
@@ -11,7 +13,6 @@ services:
     volumes:
       - ./postgresql:/var/lib/postgresql/data
 
-
   java_spring_boot_api:
     build: .
     container_name: java_spring_boot_api
@@ -20,5 +21,8 @@ services:
       - "5005:5005"
     depends_on:
       - java_spring_boot_pg
-    links:
-      - java_spring_boot_pg
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+    volumes:
+      - ./src:/home/app/src
+      - ./data:/home/data

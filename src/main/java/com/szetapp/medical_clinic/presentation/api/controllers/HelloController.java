@@ -14,7 +14,9 @@ public class HelloController {
         Map<String, Object> json = new HashMap<>();
         json.put("message", "Hola Spring Boot");
         json.put("date", new Date());
-
+        int a = 2;
+        int b = 3;
+        int x = a + b;
         return json;
     }
 }
