@@ -1,4 +1,4 @@
-package com.szetapp.medical_clinic;
+package com.szetapp.medicalclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.szetapp.medical_clinic.presentation.api.controllers;
+package com.szetapp.medicalclinic.presentation.api.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

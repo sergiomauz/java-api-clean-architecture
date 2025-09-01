@@ -1,4 +1,4 @@
-package com.szetapp.medical_clinic;
+package com.szetapp.medicalclinic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
