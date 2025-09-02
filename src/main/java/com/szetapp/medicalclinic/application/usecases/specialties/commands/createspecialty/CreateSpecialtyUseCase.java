@@ -8,6 +8,6 @@ public class CreateSpecialtyUseCase {
     }
 
     public CreateSpecialtyVm execute(){
-        return new CreateSpecialtyVm(this.command.getName(), this.command.getDescription());
+        return new CreateSpecialtyVm(command.getName(), command.getDescription());
     }
 }

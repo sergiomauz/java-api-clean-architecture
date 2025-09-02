@@ -20,7 +20,7 @@ public class SpecialtiesController {
     @PostMapping("/specialties")
     public ResponseEntity<CreateSpecialtyVm> createSpecialty(@RequestBody CreateSpecialtyDto dto) {
         var command = new CreateSpecialtyCommand(dto);
-        var vm = this.specialtyService.createSpecialty(command);
+        var vm = specialtyService.createSpecialty(command);
 
         return ResponseEntity.ok(vm);
     }
